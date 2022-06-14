@@ -1,0 +1,51 @@
+<%- include("partials/header") -%>
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #title{
+           margin: 0px 20px 20px 20px;
+            display:block;
+            width: 100%;
+            height:40px;
+            font-size: x-large;
+        }
+        #post{
+            margin: 0px 20px 20px 20px;
+            display:block;
+            width: 100%;
+            height: 130px;
+            font-size: large;
+        } 
+        #publish{
+            margin: 20px;
+            background-color: rgb(71, 71, 190);
+            color: azure;
+            height: 40px;
+            width: 80px;
+            font-size: larger;
+        
+        }
+        #publish:hover{
+            background-color: rgb(24, 24, 224);
+        }
+        legend{
+            margin: 20px 20px 0px 20px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Compose</h1>
+    <form action="" method="post">
+
+        <legend title="Title" >Title</legend><input type="text" name="title" id="title">
+        <legend title="Title" >Post</legend> <textarea name="post" id="post"></textarea>
+        <button type="submit" name="submit" id="publish">Publish</button>
+    </form>
+</body>
+</html>
+<%- include("partials/footer") -%>
